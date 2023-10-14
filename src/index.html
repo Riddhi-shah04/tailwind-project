@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <header class="flex items-center h-20 py-4 md:py-6 md:h-24 bg-cyan-blue">
+        <div class="container flex justify-between items-center space-x-2">
+            <a class="header-left">
+                <img src="assets/images/header-logo.svg" alt="logo" class="header-logo w-32 h-8" width="204" height="40">
+            </a>
+            <div class="header-right">
+                <nav class="navigation-menu hidden md:block">
+                    <ul class="menu-list flex gap-x-6 lg:gap-x-11">
+                        <li class="menu-item">
+                            <a href="#">Industry Solutions</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Platform</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Resources</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">About Us</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Careers</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <span class="toggle-menu rounded-sm md:hidden block h-1 w-7 relative bg-white before:absolute after:absolute before:-inset-x-0 after:-inset-x-0 after:h-1 before:h-1 after:bg-white before:bg-white before:-top-2.5 after:-bottom-2.5 before:rounded-sm after:rounded-sm">
+            </span>
+        </div>
+    </header>
+    <main>
+        <section class="banner-section py-8 lg:py-[60px] bg-cyan-blue">
+            <div class="container flex items-center flex-col-reverse md:flex-row">
+                <div class="banner-caption font-['Lyon'] max-w-[678px]">
+                    <h1 class="text-3xl text-white mb-5 lg:mb-[46px] lg:text-5xl"><span>VR for EQ.</span>Simulations for essential workplace skills.</h1>
+                    <p class="text-2xl text-white mb-5 lg:mb-6 lg:text-3xl"><q>The high-tech solution for becoming more empathetic.</q></p>
+                    <picture class="caption-image mb-4 lg:mb-[54px]">
+                        <img src="assets/images/fast-company-img.png" alt="fast-company-img">
+                    </picture>
+                    <button role="button" class="flex gap-3 lg:gap-5 bg-tomato p-2 lg:p-3 font-['Soleil'] hover:bg-red-600 transition-all">
+                        <span class="text-white text-base tracking-wide">TRY IT NOW</span>
+                        <img src="assets/images/arrow.svg" alt="arrow" width="30" height="20">
+                    </button>
+                </div>
+                <div class="banner-image">
+                    <picture>
+                        <img src="assets/images/banner-img.png" alt="banner-image">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="case-studies-section">
+            <div class="container">
+                <div class="title-section">
+                    <p class="text-tomato">SERVICES</p>
+                    <h2 class="max-w-[628px]">Where are your tough conversations happening?</h2>
+                </div>
+                <div class="case-studies-list">
+                    <div class="case-study-item bg-violet">
+                        <h3 class="text-white">Leadership</h3>
+                        <p class="text-barleywhite">Unlock empathic potential through immersive practice. Support leaders as they coach employees and bring them together in unique ways.</p>
+                    </div>
+                    <div class="case-study-item bg-barleywhite">
+                        <h3 class="text-violet">Diversity, Equity, & Inclusion</h3>
+                        <p class="text-blue">Transform human capital into a true competitive advantage. Make diversity, equity, and inclusion a reality.</p>
+                    </div>
+                    <div class="case-study-item bg-purple">
+                        <h3 class="text-barleywhite">Sales Training</h3>
+                        <p class="text-sand">Immerse your salespeople in virtual environments where they can hone even the most advanced, consultative skill sets.</p>
+                    </div>
+                    <div class="case-study-item bg-sand">
+                        <h3 class="text-tomato">Education</h3>
+                        <p class="text-blue">From preparation to induction to professional development, use simulations to upskill or enhance competence and self-efficacy in the classroom.</p>
+                    </div>
+                    <div class="case-study-item bg-blushpink">
+                        <h3 class="text-purple">Healthcare</h3>
+                        <p class="text-blue">Empower practitioners to practice and master high-stakes conversations for improved confidence, compliance, and impact.</p>
+                    </div>
+                    <div class="case-study-item bg-blue">
+                        <h3 class="text-shell">Customer Service Training</h3>
+                        <p class="text-sand">Transform human interaction into memorable brand experiences for your customers and repeat business for your organization.</p>
+                    </div>
+                </div>
+                <button class="btn btn-xlarge btn-primary mx-auto">
+                    <span>SEE ALL CASE STUDIES</span>
+                    <img src="assets/images/arrow.svg" alt="arrow">
+                </button>
+            </div>
+        </section>
+        <section class="press-section bg-sand pt-[84px] pb-[106px]">
+            <div class="container">
+                <div class="title-section mb-[58px] text-4xl text-center">
+                    <h2>In the Press</h2>
+                </div>
+                <div class="press-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-[70px]">
+                    <div class="press-list-item">
+                        <picture class="client-logo mb-5">
+                            <img src="assets/images/FastCompany.png" alt="client-logo1">
+                        </picture>
+                        <p class="mb-2.5">The high-tech solution to becoming more empathetic in less than an hour</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="press-list-item">
+                        <picture class="client-logo">
+                            <img src="assets/images/Fortune.png" alt="client-logo2">
+                        </picture>
+                        <p>This new VR simulator helps you prepare for the most awkward office encounters</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="press-list-item">
+                        <picture class="client-logo">
+                            <img src="assets/images/edsurge.png" alt="client-logo3">
+                        </picture>
+                        <p>Blending VR with Live Actors for a Fresh Twist on PD</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="press-list-item">
+                        <picture class="client-logo">
+                            <img src="assets/images/TechCrunch.png" alt="client-logo4">
+                        </picture>
+                        <p>Empathy technologies like VR, AR and social media can transform education</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="press-list-item">
+                        <picture class="client-logo">
+                            <img src="assets/images/CNBC.png" alt="client-logo5">
+                        </picture>
+                        <p>How Companies Are Using VR to Develop Employees’ Soft Skills</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="press-list-item">
+                        <picture class="client-logo">
+                            <img src="assets/images/yahoo!finance.png" alt="client-logo6">
+                        </picture>
+                        <p>Mursion Announces Series B Funding Round Led by Leeds Illuminate</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <button class="btn btn-large btn-primary mx-auto">
+                    <span>READ MORE</span>
+                    <img src="assets/images/arrow.svg" alt="arrow">
+                </button>
+            </div>
+        </section>
+        <section class="own-workspace-section">
+            <div class="container grid grid-cols-2">
+                <picture class="computer-image">
+                    <img src="assets/images/computer.png" alt="computer">
+                </picture>
+                <div class="own-workspace-text flex flex-col">
+                    <h2>Build your own simulation to reflect the reality of your workplace.</h2>
+                    <button class="btn btn-primary mx-auto">
+                        <span>TRY NOW</span>
+                        <img src="assets/images/arrow.svg" alt="arrow">
+                    </button>
+                    <!-- <button class="btn btn-primary">TRY NOW</button> -->
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

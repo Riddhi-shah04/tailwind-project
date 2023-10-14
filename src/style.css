@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+    font-family: "Lyon";
+    src: url("assets/fonts/Lyon.eot");
+    src: url("assets/fonts/Lyon.eot?#iefix")format("embedded-opentype"),
+        url("assets/fonts/Lyon.woff")format("woff"),
+        url("assets/fonts/Lyon.woff2")format("woff2"),
+        url("assets/fonts/Lyon.ttf")format("truetype"),
+        url("assets/fonts/Lyon.svg#Lyon")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: 'Soleil';
+    src: url('assets/fonts/Soleil-Regular.eot');
+    src: url('assets/fonts/Soleil-Regular.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Soleil-Regular.woff2') format('woff2'),
+        url('assets/fonts/Soleil-Regular.woff') format('woff'),
+        url('assets/fonts/Soleil-Regular.ttf') format('truetype'),
+        url('assets/fonts/Soleil-Regular.svg#Soleil-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@layer base{
+    :root{
+        --primary-color: #112F47;
+        --primary-red-color: #FF615C;
+    }
+
+    html{
+        font-family: "Soleil", system-ui, sans-serif;
+    }
+    
+    picture, span{
+        display: inline-block;
+    }
+    h2{
+        @apply text-2xl sm:text-3xl md:text-4xl text-cyan-blue;
+    }
+}
+
+@layer components{
+    .box{
+        @apply py-7 px-6;
+    }
+    .box h3{
+        @apply text-2xl md:text-3xl mb-3 font-lyon;
+    }
+    .box p{
+        @apply text-base md:text-lg font-soleil;
+    }
+}
+
+.btn{
+    @apply min-h-[50px] text-white flex gap-x-4 py-2 px-4 md:py-3 md:px-6 transition-all hover:gap-x-6 bg-slate-400 items-center w-full justify-center text-sm md:text-base;
+}
+.btn-primary{
+    @apply bg-purple;
+}
+.btn-secondary{
+    @apply bg-blue;
+}
+.btn-small{
+    @apply max-w-[116px];
+}
+.btn-large{
+    @apply max-w-[190px];
+}
+.btn-xlarge{
+    @apply max-w-[250px] md:max-w-[275px];
+}
+
+.menu-list .menu-item a{
+    @apply text-white relative pb-2 transition-all hover:before:absolute hover:before:h-px hover:before:bg-white hover:before:inset-x-0 hover:before:bottom-0;
+}
+
+.toggle-menu{
+    position:relative;
+    height:4px;
+    background-color: white;
+    width:30px;
+    cursor: pointer;
+}
+
+.banner-caption > h1 > span{
+    color: var(--primary-red-color);
+}
+
+.case-studies-section{
+    @apply pt-[52px] pb-[58px];
+}
+.case-studies-section .title-section{
+    @apply flex flex-col justify-center items-center text-center mb-5 lg:mb-10 ;
+}
+.case-studies-list{
+    @apply grid grid-cols-1 gap-8  md:grid-cols-2 lg:grid-cols-3 mb-10 lg:mb-[70px];
+}
+.case-study-item{
+    @apply box;
+}
+
+.press-list .press-list-item{
+    @apply py-8 px-9 border border-grey;
+}
+.client-logo{
+    @apply mb-5;
+}
+.press-list-item p{
+    @apply mb-2.5;
+}
+.press-list-item a{
+    opacity:0;
+    visibility: hidden;
+}
