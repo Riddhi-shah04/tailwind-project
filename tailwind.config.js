@@ -19,6 +19,7 @@ module.exports = {
 
       maxWidth : {
         '116px' : '116px', //xx-sm
+        '136px' : '136px',
         '138px': '138px', // x-sm
         '146px' : '146px', // sm
         '166px' : '166px', // md
@@ -28,12 +29,17 @@ module.exports = {
         '250px' : '250px', //xl
         '264px' : '264px', //xxl
         '275px' : '275px', //xxxl
+        '314px' : '314px',
         '628px' : '628px',
         '678px' : '678px',
       },
-
+      
       minHeight : {
         '50px' : '50px',
+      },
+
+      height : {
+        '54px' : '54px',
       },
 
       margin : {
@@ -64,6 +70,10 @@ module.exports = {
           lineHeight: '67.2px',
           fontWeight: '400',
         }],
+      },
+
+      backgroundImage : {
+        'arrow' : "url('../images/arrow.svg')",
       },
     },
 

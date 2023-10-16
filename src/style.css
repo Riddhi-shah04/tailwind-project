@@ -67,8 +67,11 @@
 .btn-secondary{
     @apply bg-blue;
 }
-.btn-small{
+.btn-xsmall{
     @apply max-w-[116px];
+}
+.btn-small{
+    @apply max-w-[170px];
 }
 .btn-large{
     @apply max-w-[190px];
@@ -107,7 +110,8 @@
 }
 
 .press-list .press-list-item{
-    @apply py-8 px-9 border border-grey;
+    @apply py-8 px-9 border border-grey transition-all hover:border-yellow hover:bg-yellow hover:cursor-pointer relative;
+    /* hover:before:absolute hover:before:bg-[url('src/assets/images/arrow.svg')] before:h-4 */
 }
 .client-logo{
     @apply mb-5;
@@ -116,6 +120,18 @@
     @apply mb-2.5;
 }
 .press-list-item a{
-    opacity:0;
-    visibility: hidden;
+    @apply invisible opacity-0 text-tomato;
+}
+.press-list-item:hover > a{
+    @apply visible opacity-100;
+}
+
+.our-client-caption h2{
+    @apply relative before:absolute;
+}
+.client-list-item .client-image{
+    @apply max-w-[136px] h-[54px];
+}
+.client-image img{
+    @apply w-full h-full object-contain;
 }
